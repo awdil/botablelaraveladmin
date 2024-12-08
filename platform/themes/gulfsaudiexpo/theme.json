@@ -1,0 +1,13 @@
+{
+    "name": "Gulf Saudi Expo",
+    "namespace": "Theme\\gulfsaudiexpo\\",
+    "description": "Theme for gulfsaudiexpo.",
+    "author": "Gulf Saudi Expo Technologies",
+    "required_plugins": [
+        "blog",
+        "contact",
+        "gallery",
+        "language",
+        "simple-slider"
+    ]
+}

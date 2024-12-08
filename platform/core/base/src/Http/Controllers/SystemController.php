@@ -85,45 +85,7 @@ class SystemController extends BaseSystemController
 
         header('Cache-Control: no-cache');
 
-        Assets::addScriptsDirectly('vendor/core/core/base/js/system-update.js');
-        Assets::usingVueJS();
-
-        $memoryLimit = SystemManagement::getMemoryLimitAsMegabyte();
-        $requiredMemoryLimit = 256;
-        $maximumExecutionTime = SystemManagement::getMaximumExecutionTime();
-        $requiredMaximumExecutionTime = 300;
-
-        BaseHelper::maximumExecutionTimeAndMemoryLimit();
-
-        $this->pageTitle(trans('core/base::system.updater'));
-
-        $activated = $core->verifyLicense();
-        $isOutdated = false;
-
-        try {
-            $latestUpdate = $core->getLatestVersion();
-
-            if ($latestUpdate) {
-                $isOutdated = version_compare($core->version(), $latestUpdate->version, '<');
-            }
-        } catch (ConnectionException $exception) {
-            $latestUpdate = null;
-
-            BaseHelper::logError($exception);
-        }
-
-        $updateData = ['message' => null, 'status' => false];
-
-        return view('core/base::system.updater', compact(
-            'memoryLimit',
-            'requiredMemoryLimit',
-            'maximumExecutionTime',
-            'requiredMaximumExecutionTime',
-            'activated',
-            'latestUpdate',
-            'isOutdated',
-            'updateData'
-        ));
+        
     }
 
     public function postUpdater(Core $core, Request $request)

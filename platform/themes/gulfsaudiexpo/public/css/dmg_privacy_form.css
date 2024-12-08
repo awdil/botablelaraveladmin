@@ -1,0 +1,277 @@
+
+
+/* The Modal (background) */
+.privacyformmodal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 999; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.privacyformmodal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+.privacyformmodal-content h2, .privacyformmodal-content p, .privacyformmodal-content label {
+    color: black;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.privacyformmodal-header {
+    padding: 2px 16px;
+    color: white;
+}
+
+.privacyformmodal-body {
+    padding: 2px 16px;
+}
+
+.gform_wrapper .validation_error
+{
+    display: none!important;
+}
+
+
+.close_dmg_privacy_form {
+    position: absolute;
+    right: -16px;
+    top: -20px;
+    background: #8c5da7;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 30px;
+    font-size: 24px;
+    color: #fff!important;
+    cursor: pointer;
+}
+.privacyformmodal-content {
+    padding: 30px!important;
+}
+.privacyformmodal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+
+
+.privacyformmodal-header h3 {
+    color: #000;
+}
+
+
+
+.privacyformmodal-body ul li {
+    padding-right: 0 !important;
+    margin-top: 0 !important;
+    margin-bottom: 9px !important;
+    list-style:none;
+}
+.privacyformmodal-body  [type=checkbox]:checked,.privacyformmodal-body  [type=checkbox]:not(:checked) {
+    position: absolute;
+    left: -9999px
+}
+ .privacyformmodal-body  [type=radio]:checked,.privacyformmodal-body  [type=radio]:not(:checked) {
+    position: absolute;
+    left: -9999px
+}
+
+.privacyformmodal-body  [type=checkbox]:checked+label,.privacyformmodal-body [type=checkbox]:not(:checked)+label {
+    position: relative;
+    padding-left: 1.95em;
+    cursor: pointer
+}
+ .privacyformmodal-body [type=radio]:checked+label,.privacyformmodal-body [type=radio]:not(:checked)+label {
+    position: relative;
+    padding-left: 1.95em;
+    cursor: pointer
+}
+
+.privacyformmodal-body  [type=checkbox]:checked+label:before,.privacyformmodal-body [type=checkbox]:not(:checked)+label:before {
+    content: "";
+    position: absolute;
+    border: 2px solid #ccc;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,.1);
+    left: 0;
+    top: 4px;
+    width: 1.25em;
+    height: 1.25em;
+}
+.privacyformmodal-body  [type=radio]:checked+label:before,.privacyformmodal-body [type=radio]:not(:checked)+label:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 1.25em;
+    height: 1.25em;
+    border: 2px solid #ccc;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,.1);
+}
+
+.privacyformmodal-body  [type=checkbox]:checked+label:after, .privacyformmodal-body [type=checkbox]:not(:checked)+label:after {
+    content: "\2713\0020";
+    position: absolute;
+    line-height: .8;
+    color: #8c5da7;
+    transition: all .2s;
+    font-family: "Lucida Sans Unicode","Arial Unicode MS",Arial;
+    top: .5em;
+    left: .2em;
+    font-size: 1.1em;
+}
+ .privacyformmodal-body [type=radio]:checked+label:after, .privacyformmodal-body [type=radio]:not(:checked)+label:after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 4.9px;
+    font-size: 1.2em;
+    line-height: .8;
+    background: #ed3936;
+    transition: all .2s;
+    font-family: "Lucida Sans Unicode","Arial Unicode MS",Arial;
+    height: .5em;
+    width: .5em;
+    border-radius: 50%;
+}
+
+ .privacyformmodal-body [type=checkbox]:not(:checked)+label:after {
+    opacity: 0;
+    transform: scale(0)
+}
+.privacyformmodal-body [type=radio]:not(:checked)+label:after {
+    opacity: 0;
+    transform: scale(0)
+}
+
+ .privacyformmodal-body [type=checkbox]:checked+label:after {
+    opacity: 1;
+    transform: scale(1)
+}
+.privacyformmodal-body [type=radio]:checked+label:after {
+    opacity: 1;
+    transform: scale(1)
+}
+
+ .privacyformmodal-body [type=checkbox]:disabled:checked+label:before,.privacyformmodal-body [type=checkbox]:disabled:not(:checked)+label:before {
+    box-shadow: none;
+    border-color: #bbb;
+    background-color: #ddd
+}
+ .privacyformmodal-body [type=radio]:disabled:checked+label:before,.privacyformmodal-body [type=radio]:disabled:not(:checked)+label:before {
+    box-shadow: none;
+    border-color: #bbb;
+    background-color: #ddd
+}
+
+
+ .privacyformmodal-body [type=checkbox]:disabled:checked+label:after {
+    color: #999
+}
+ .privacyformmodal-body [type=radio]:disabled:checked+label:after {
+    color: #999
+}
+ .privacyformmodal-body [type=checkbox]:disabled+label {
+    color: #aaa
+}
+.privacyformmodal-body [type=radio]:disabled+label {
+    color: #aaa
+}
+.privacyformmodal-body label:hover:before {
+    border: 2px solid #ccc!important
+}
+
+.privacy_form_btn {
+   display: inline-block;
+   margin: 0 0px 0px 0;
+   -webkit-transition: all .3s ease;
+   -o-transition: all .3s ease;
+   transition: all .3s ease;
+   color: #fff;
+   text-decoration: none;
+   font-weight: 800;
+   background: #8c5da7;
+   padding: 1.25rem 1.688rem;
+   text-transform: uppercase;
+   text-align: center;
+   font-size: 1.125rem;
+   position: relative;
+   overflow: hidden;
+   outline: 0!important;
+   vertical-align: middle;
+   cursor: pointer;
+   letter-spacing: .068rem;
+   outline: 0;
+   border: 0;
+   font-family: Montserrat,sans-serif;
+}
+
+.privacyformmodal-content label {display: inline-block;line-height: 1.75;}

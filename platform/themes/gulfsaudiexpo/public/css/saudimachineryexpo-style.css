@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,500;6..12,600;6..12,700;6..12,800;6..12,900;6..12,1000&display=swap');
+
+body, .h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6 {
+    font-family: 'Nunito Sans', sans-serif!important;
+}
+
+body .banner_content h1,
+.banner_content ul li,
+.two_col_section .two_col_content h2,
+.product-buyers h2,
+.product-buyers .divide-head p,
+.product-buyers .product-buyers-col-box h3,
+.product_sector .divide-head h2,
+.exhibiting-enquiry .exhibiting-enquiry-content h2,
+.exhibiting-enquiry-item p,
+.article_wrapper .divide-head h2,
+.article_wrapper .article_content p,
+.article_readmore a,
+.feature_content p,
+.featured-exhibitor .featured-exhibitor-wrap .left-side h2,
+.article_wrapper h2.pre-head,
+.article_wrapper .head-text p,
+.article_wrapper .three-col-content p,
+.three-col-content p,
+.counter-col-section .grid-head h2,
+.simple-testimonial .big5-testimonial-content p,
+.big5-speaker .divide-head h2,
+.big5-speaker .divide-head p,
+.quicklinks-row .quicklink-block-inner h4,
+.full-gal-slider-wrapper .full_width_two_col_content h2,
+.full-gal-slider-wrapper .full_width_two_col_content p,
+.admission-free-text p,
+.testimonial-quote-text h4,
+.counter-col-section .starts_counter .starts_block .starts_inner .wp-content p,
+.counter-col-section .grid-head p,
+.news_wrapper h2,
+.news_left_inner p,
+.big5-speaker .pre-head,
+.view-profile p,
+.subscribe-form h2,
+.subscribe-left-side p,
+.gform_wrapper.gravity-theme .gfield input, .gform_wrapper.gravity-theme .gfield select,
+p.dmg-privacy-statment,
+.quicklinks-section h2,
+.subscribe-left-side h2,
+.full_width_two_col_wrap h2,
+.full_width_two_col_wrap p
+{
+    font-weight: 300!important;
+}
+
+.starts_counting,
+.no-head-img .divide-head-right .view-all,
+.product_sector .product_content h3,
+.exhibiting-enquiry .exhibiting-enquiry-item h3,
+.article_wrapper .article_content h3,
+.feature_content .read-more-feature a,
+.simple-testimonial .big5-testimonial-text h4,
+.big5-speaker .view-profile h4,
+.footer-col-wrap .footer-col h4,.testimonial-quote-text p,
+.news_left_inner h4,
+.news_wrapper .view-all,
+.two_col_wrap .primary-btn{
+    font-weight: 900!important;
+}
+
+.starts_inner p,
+.four-col-slider .three-col-content p,
+body .layou3header .mainnav>ul>li>a{
+    font-weight: 400!important;
+}
+@media (min-width:1600px) { 
+    .threecol-section.article_wrapper {
+        padding-top: 220px;
+    }
+}
+
+
+@media (max-width:1199px) {
+    .threecol-section.article_wrapper {
+        padding-top: 75px;
+    }
+}
+
+@media (max-width: 991px) {
+    .layou3header .hamburger-ac, .layou3header .hamburger-ac:after, .layou3header .hamburger-ac:before {
+        background-color: #fff!important;
+    }
+}
+
+.featured-exhibitor-wrap .left-side {
+    flex-direction: column;
+}
+
+.layou3header .event-time-here h6, .layou3header .event-time-here p, .layou3header header .header_colocated_logo p {
+    color: #fff!important;
+}
